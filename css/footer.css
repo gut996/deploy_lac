@@ -1,0 +1,215 @@
+
+
+/* ==========================================
+           FOOTER START
+============================================*/
+
+:root{
+    --font-family-basic: 'DM Sans', sans-serif;
+    /* --font-family-title: 'Patua One', cursive; */
+}
+
+*{
+    font-family: var(--font-family-basic);
+}
+
+.footer_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-marine-blue);
+    font-family: var(--font-family-basic);
+}
+
+.footer_container_two{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_second-first, .footer_second-second {
+    width: 50%;
+    padding: 3vh 0;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.footer_second>h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    font-family: var(--font-family-basic);
+}
+
+.footer-icon{
+    /* text-align: center; */
+    display: inline-flex;
+    padding: 10px 0;
+}
+
+.footer_icon{
+    position: relative;
+    display: block;
+    color: var(--color-marine-blue);
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: var(--color-blue-grey);
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 15px 15px;
+    text-align: center;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.footer_icon:hover{
+    background: var(--color-green);
+}
+
+.footer_icon>a{
+    text-decoration: none;
+}
+
+.contact-newsletter_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-newsletter_group>p {
+    color: var(--color-light-grey);
+    padding: 10px 0 5px;
+    font-family: var(--font-family-basic);
+}
+
+.contact-newsletter_group>input {
+    padding: 10px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    /* margin-bottom: 10px; */
+    width: 45%;
+    font-size: 0.85rem;
+    margin: 0 auto 10px;
+}
+
+.contact-newsletter_group>input:nth-child(2){
+    margin-bottom: 20px;
+}
+
+.contact-newsletter_btn {
+    margin-top: 10px;
+    background: var(--color-blue-grey);
+    padding: 10px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    width: 25%;
+    color: var(--color-marine-blue);
+    border: none;
+    transition: .4s;
+    -webkit-appearance: none;
+    font-weight: 600;
+}
+
+.contact-newsletter_btn:hover {
+    background: #92BB55;
+    cursor: pointer;
+}
+
+.footer_copyright {
+    color: var(--color-marine-blue);
+    text-align: center;
+    background: var(--color-light-grey);
+    padding-top: 3vh;
+    padding-bottom: 1.5vh;
+    font-family: var(--font-family-basic);
+}
+
+.footer_fourth-logo {
+    position: absolute;
+    top: 40%;
+    left: 90%;
+}
+
+.footer_second-fourth-logo {
+    width: 100px;
+    height: 125px;
+    background: white;
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+    .footer_container_two{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_second-first, .footer_second-second {
+        width: 100%;
+    }
+
+    .contact-newsletter_group>p {
+        padding: 10px 0 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer_icon{
+        font-size: 25px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        margin: 15px 15px;
+    }
+
+    .footer_second-first{
+        padding: 3vh 0 1vh;
+    }
+
+    .footer_second-second{
+        padding: 0vh 0 3vh;
+    }
+
+    .contact-newsletter_group>input {
+        width: 60%;
+    }
+    
+}
+
+/* ==========================================
+           FOOTER FIN
+============================================*/
+
+
+
+
+/*====================================
+        BACK TO TOP BUTTON
+====================================*/
+
+
+
+#btnDownTop{
+    position: fixed;
+    background: rgba(190, 222, 219,0.9);
+    border-radius: 3px;
+    text-align: center;
+    bottom: 20px;
+    width: 50px;
+    height: 47px;
+    line-height: 45px;
+    right: 25px;
+    font-style: 22px;
+    color: #102746;
+  
+}
+
+
+#btnDownTop:hover {
+    background: var(--color-green);
+}
+
+
+/*====================================
+        BACK TO TOP BUTTON END
+====================================*/

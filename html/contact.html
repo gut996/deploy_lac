@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pro Caliber Lacrosse</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../jquery-3.5.1.min.js"></script>
+    <!-- FOOTER -->
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/d1ee1bda50.js"  crossorigin="anonymous" ></script>
+    <script src="../js/utilities.js"></script>
+    <link rel="stylesheet" href="../css/contact.css"> <!-- Use your css file-->
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="shortcut icon" href="../img/Lacrosse-logo-circle-2.png" type="image/x-icon">
+    <script src="../js/contactus.js"></script>
+</head>
+<body>
+    <!-- header -->
+<div data-include="menu"></div>
+
+<div class="contactus-all">
+    <div class="main-title">
+    <span>CONTACT US</span>
+    </div>
+
+    <div class="contactus-all-sub">
+    
+    <div class="contact-left">
+            <div class="contact-left-bg">
+            <h3>Contact Information</h3>
+
+            <div class="contact-left-info">
+
+                <div class="contact-left-info_first">
+                <div class="contact-left-info_person">
+                <i class="fa fa-user"></i>
+                <p>Sandy Pace</p>
+                </div>
+
+                <div class="contact-left-info_person">
+                <a href="mailto:sandy@procaliberlacrosse.net"><i class="mail-tel fas fa-envelope"></i>
+                <p>sandy@procaliberlacrosse.net</p></a>
+                </div>
+                </div>
+
+                <div class="contact-left-info_second">
+                <div class="contact-left-info_person">
+                <i class="fa fa-user"></i>
+                <p>Tyler Pace</p>
+                </div>
+
+                <div class="contact-left-info_person">
+                <a href="tel:604-445-1434"><i class="fas fa-phone-alt mail-tel"></i>
+                <p>604-445-1434</p></a>
+                </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <div class="contact-form-sentense">
+            <h2>Send us a Message</h2>
+        </div>
+
+        <form>
+            <div class="contact-form_group">
+                <label class="contact-label" for="contact-form_name">Name<span>*</span></label>
+                <input type="text" name="name" id="contact-form_name" placeholder=" Your Name" required>
+            </div>
+
+            <div class="contact-form_group">
+                <label class="contact-label" for="contact-form_email">Email Address<span>*</span></label>
+                <input type="email" name="email" id="contact-form_email" placeholder=" example@domain.com"
+                    required>
+            </div>
+
+            <div class="contact-form_group">
+                <label class="contact-label" for="contact-form_tel">Phone number</label>
+                <input type="tel" name="tel" id="contact-form_tel" placeholder=" Your phone number">
+            </div>
+
+            <div class="contact-form_group">
+                <label class="contact-label" for="contact-form_subject">Subject<span>*</span></label>
+                <input type="text" name="subject" id="contact-form_subject" placeholder=" Your Subject">
+            </div>
+
+            <div class="contact-form_group">
+                <label class="contact-label" for="contact-form_message">Message<span>*</span></label>
+                <textarea name="msg" id="contact-form_message" class="contact-form_message" cols="30"
+                    rows="10" placeholder=" Write your message here"></textarea>
+            </div>
+
+            <div class="contactus-button">
+            <input id="contact-submit" type="button" value="SUBMIT" class="contact-form_btn">
+            </div>
+            <div id="result-contact-msg"></div>
+            <div id="result-contact-error-msg"></div>
+        </form>
+    </div>
+    </div>
+</div>
+    <!-- Tag to add footer -->
+    <div data-include="footer"></div>
+
+</body>
+</html>

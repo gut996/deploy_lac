@@ -1,0 +1,395 @@
+
+#cover{
+  /*pointer-events: none; /make this thing untouchable*/
+  position: fixed; 
+  top: 0; 
+ /* height: 100vh; this causes the problem*/
+  width: 100%;
+  z-index: 2; 
+  animation: opening 3.0s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+
+#cover > img{
+  pointer-events: none; /*make this thing untouchable*/
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  width: 30%;
+  animation: expand 4.0s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode:backwards;
+}
+
+#main-title span {
+  /*animation*/
+  opacity: 0;
+  animation: fadeIn 3.0s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+  /*end*/
+
+ 
+  color: #FFFFFF;
+  display: block;
+  font-size: 4rem;
+  padding: 2%; 
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility; 
+  background-color:var(--color-marine-blue);
+  letter-spacing: .1em;
+  
+}
+
+
+#readMore{
+  display: none;
+}
+
+
+
+#readMoreBtn{
+  background: var(--color-blue-grey);
+  font-weight: 700;
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
+  margin: 2vh auto 0;
+  border-radius: 5px;
+  border: 1px solid var(--color-blue-grey);
+  color: var(--color-marine-blue);
+  outline: none;
+  transition: all .4s;
+  -webkit-appearance: none;
+  border: none; 
+}
+
+#readMoreBtn:hover {
+  background: var(--color-green);
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+
+footer{
+  opacity: 0;
+  animation: fadeIn 3.0s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+
+}
+
+
+.bioComment ul{
+  list-style: none;
+}
+
+
+/* animation*/
+
+
+
+@keyframes opening{
+  0%   {opacity: 1.0;}
+  25%  {opacity: 0.75;}
+  50%  {opacity: 0.5;}
+  75%  {opacity: 0.25;}
+  100% {opacity: 0;}
+}
+
+@keyframes expand {
+  0%   {transform: scale(1.0);}
+
+  100% {transform: scale(5.0);}
+  
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+
+  100%{opacity: 1.0;}
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 375px) {
+
+
+
+#bioContainer {
+
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  z-index: 1;
+  font-family: var(--font-family-basic);
+  background-color: white;
+
+  /*animation*/
+
+  animation: fadeIn 3.0s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+
+  
+
+}
+
+#bioPic{
+  pointer-events: none; /*make this thing untouchable*/
+  width: 40%;
+}
+
+#smallBioPic{
+  display: none;
+}
+
+/* #bioName {
+  position: absolute;
+  top: 1em;
+  left: 2em;
+  font-size: 5vw;
+  color: white;
+  background-color: rgb(17, 39, 69);
+  padding: 2%;
+} */
+
+#bioNameS {
+  display: none;
+}
+
+#bioDetails {
+  position: absolute;
+  top: 22em;
+  left: 1rem;
+  font-size: 2vw;
+  color: white;
+  text-align: left;
+  background-color: rgb(17, 39, 69, 0.8);
+  padding: 2%;
+ 
+}
+
+#smallBioDetails{
+  display: none;
+}
+
+#bioComment{
+  margin: 0;
+  text-align: left;
+  padding: 5% 10%;
+  display: block;
+  font-size: 1rem;
+}
+
+
+
+}
+
+
+.subtitle-bio{
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-green);
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.achivements-info{
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ipad*/
+@media screen and (max-width: 768px) {
+
+
+  #bContainer{
+   text-align: center;
+  }
+
+  #bioName{
+    display: none;
+  }
+  
+  #bioNameS{
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  width: 100%;
+  height: 15%;
+  font-size: 3vw;
+  background-color: rgb(17, 39, 69);
+  color: white;
+  }
+
+  #bioPic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 50%;
+  
+}
+
+#smallBioPic{
+  display: none;
+}
+
+
+#bioDetails{
+  display: none;
+}
+
+
+#smallBioDetails{
+  text-align: left;
+  margin: 0;
+  padding: 2%;
+  display:block;
+  left: 0;
+  width: 100%;
+  height: auto;
+  font-size: 4vw;
+  background-color: rgb(17, 39, 69);
+  color: white;
+
+}
+
+}
+
+
+
+
+
+
+
+/*mobile*/
+/*set small pic for mobile*/
+@media screen and (max-width: 375px) {
+
+#bContainer{
+  
+    height: 100vh;
+}
+
+#bioName{
+  display: none;
+}
+
+
+#bioNameS{
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  width: 100%;
+  height: 15%;
+  font-size: 3vw;
+  background-color: rgb(17, 39, 69);
+  color: white;
+  }
+
+
+#bioPic{
+  display: none;
+}
+
+#smallBioPic{
+  display: block;
+  top: 0;
+  width: 100vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+#bioDetails{
+
+/*display*/
+  
+  margin: 0;
+  left: 0;  
+  width: 100%;
+  height: auto;
+  font-size: 1em;
+  text-align: left;
+  background-color: rgb(17, 39, 69);
+  padding: 2%;
+}
+
+#bioComment{
+  top: 70%;
+  left:0;
+  width: 100%;
+  height: 10%;
+  font-size: 4vw;
+  padding: 2%;
+}
+
+#cover{
+  pointer-events: none; /*make this thing untouchable*/
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  z-index: 2; 
+  animation: opening 3.0s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+
+
+#cover > img{
+  position: fixed;
+  top: 40%;
+  left: 35%;
+  width: 30%;
+  animation: expand 4.0s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode:backwards;
+}
+
+
+
+#readMoreBtn{
+  background: var(--color-blue-grey);
+  font-weight: 700;
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
+  margin: 2vh auto 0;
+  border-radius: 5px;
+  border: 1px solid var(--color-blue-grey);
+  color: var(--color-marine-blue);
+  outline: none;
+  transition: all .4s;
+  -webkit-appearance: none;
+  border: none; 
+}
+
+
+}
+

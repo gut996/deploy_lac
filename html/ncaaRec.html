@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCAA Recruitment|Pro Caliber Lacrosse</title>
+    <script src="../jquery-3.5.1.min.js"></script>
+    <link rel="icon" type="image/png" href="../img/logo-lacrosse-circle.png"/>
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d1ee1bda50.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/utilities.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/inview.min.js"></script>
+    <link rel="stylesheet" href="../css/fieldPrograms.css" />
+    <link rel="stylesheet" href="../css/schoolarship.css" />
+    <link rel="stylesheet" href="../css/ncaaRec.css" />
+  </head>
+  <body>
+    <!-- Tag to add header-->
+    <div data-include="menu"></div>
+    <div class="main-title">
+      <span>NCAA INFORMATION</span>
+    </div>
+
+    <!-- All my content -->
+    <div class="inner-width">
+      <div class="col col2">
+              <!-- <i class="fas fa-users"></i> -->
+        <div class="inner-width ">
+          <div class="col">              
+            <h2 class="ncaaTxt">Students who have gotten a scholarship</h2>
+            <div id="inview-example" class="counters">
+              <i class="timer fas fa-graduation-cap"></i>
+              <span class="timer timerWhite" data-count="26">26</span>
+              <i class="timer fas fa-graduation-cap"></i>
+            </div>            
+          </div>
+        </div>
+        
+        <div class="links"> 
+          <div class="flex2">
+            <a
+              href="https://web3.ncaa.org/ecwr3/"
+              target="_blank"
+              class="myButton2"
+              >Recruiting Info</a
+            >
+          </div>
+          <div class="arrow">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="flex2">
+            <a
+              href="http://www.ncaa.org/student-athletes/future/test-scores"
+              target="_blank"
+              class="myButton2"
+              >SAT Preparation</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+ 
+    <!-- <div class="cards-list" id="cards"> -->
+      <!-- <a href="#cards"> -->
+      <!-- <div
+        id="openDefault"
+        class="card"
+        onclick="openProgram(event, 'programOne')"
+      >
+        <div class="card_image">
+          <img src="../img/lacrosse1.jpg" />
+        </div>
+
+        <div class="card_title">
+          <h3>PCL Alumni</h3>
+        </div>
+      </div>
+
+
+    </div> -->
+    <!-- List Part PCL Alumni -->
+    <section id="programOne" >
+      <div class="header_div">
+      <h1 class="header1">YEAR</h1>
+    </div>
+      <div class="tab multi-button">
+        <button class="tablinks" onclick="openYear(event, 'year_2022')">2022</button>
+        <button class="tablinks" onclick="openYear(event, 'year_2023')">2023</button>
+        <button class="tablinks" onclick="openYear(event, 'year_2024')">2024</button>
+      </div>
+
+      
+        <!-- Year 2022 -->
+        <div id="year_2022" class="enr_year">
+
+          
+          <table class="content-table content-table1">
+
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>University</th>
+                <th></th> 
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Josh Jackson</td>
+                <td>University of Indianapolis</td>
+                <!-- <td>Something</td> -->
+<td><img class="badge" src="../img/univ1.jpg"  ></td>
+              </tr>
+
+            </tbody>
+          </table>
+      </div>
+<!-- Year 2023 -->
+        <div id="year_2023" class="enr_year">
+          <div class="table2">
+          <table class="content-table content-table3">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>University</th>
+                <th></th> 
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Drew Kask</td>
+                <td>Lewis University</td>
+<td><img class="badge" src="../img/lewis.png"></td>
+              </tr>
+
+              <tr class="active-row">
+                <td>Noah Armitage</td>
+                <td>Stony Brook University</td>
+<td><img class="badge badge1" src="../img/stony.png"></td>
+              </tr>
+
+              <tr>
+                <td>Beau Chetner</td>
+                <td>Lewis University</td>
+<td><img class="badge" src="../img/lewis.png"></td>
+              </tr>
+
+              <tr class="active-row">
+                <td>Tyler Kralj</td>
+                <td>Lander University</td>
+<td><img class="badge badge3" src="../img/lander.png"></td>
+              </tr>
+
+              <tr>
+                <td>Drew Andre</td>
+                <td>Lewis University</td>
+<td><img class="badge" src="../img/lewis.png"></td>
+              </tr>
+
+              <tr class="active-row">
+                <td>Thomas Mackiewich</td>
+                <td>Bryan Athyn College</td>
+<td><img class="badge badge1" src="../img/bac.png"></td>
+              </tr>
+
+              <tr>
+                <td>Kyle Brunsch</td>
+                <td>Canisius College</td>
+<td><img class="badge badge1" src="../img/canisius.png"></td>
+              </tr>
+
+              <tr class="active-row">
+                <td>Luke Evans</td>
+                <td>Newberry College</td>
+<td><img class="badge badge3" src="../img/newberry.png"></td>
+              </tr>
+
+            </tbody>
+          </table>
+          <table class="content-table content-table3">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>University</th>
+                <th></th> 
+              </tr>
+            </thead>
+            <tbody>
+        
+              <tr>
+                <td>John "Sterling" Blake</td>
+                <td>Lander University</td>
+<td><img class="badge badge3" src="../img/lander.png"></td>
+              </tr>
+              
+              <tr class="active-row">
+                <td>Ben Stewart</td>
+                <td>Hofstra University</td>
+<td><img class="badge badge1" src="../img/hofstra.png"></td>
+              </tr>
+
+              <tr>
+                <td>Cooper Gettel</td>
+                <td>Rochester Institute of Technology</td>
+<td><img class="badge  badge2" src="../img/rit.png"></td>
+              </tr>
+
+              <tr class="active-row">
+                <td>Zack Kyriacethys</td>
+                <td>Lewis University</td>
+<td><img class="badge" src="../img/lewis.png"></td>
+              </tr>
+
+              <tr>
+                <td>Joey Cote</td>
+                <td>University of the District of Columbia</td>
+<td><img class="badge badge1" src="../img/columbia.gif"></td>
+              </tr>
+
+              <tr class="active-row">
+                <td>Liam Chernoff</td>
+                <td>Georgian Court University</td>
+<td><img class="badge" src="../img/gcu.png"></td>
+              </tr>
+
+              <tr>
+                <td>Stuart Chernoff</td>
+                <td>Georgian Court University</td>
+<td><img class="badge" src="../img/gcu.png"></td>
+              </tr>
+
+              <tr class="active-row">
+                <td>Trevor Funk</td>
+                <td>Lewis University</td>
+                <td><img class="badge" src="../img/lewis.png"></td>
+              </tr>
+
+    
+            </tbody>
+          </table>
+
+        </span>
+
+
+          </div>
+        </div>
+<!-- Year 2024 -->
+        <div id="year_2024" class="enr_year">
+           
+          <table class="content-table content-table4">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>University</th>
+                <th></th> 
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="active-row">
+                <td>Jaxon Brandt</td>
+                <td>Lander University</td>
+<td><img class="badge badge3" src="../img/lander.png"></td>
+              </tr>
+              <tr>
+                <td>Noah Bradley</td>
+                <td>Lander University</td>
+<td><img class="badge badge3" src="../img/lander.png"></td>
+              </tr>
+
+              <tr class="active-row">
+                <td>Austin Ducommun</td>
+                <td>Towson University</td>
+<td><img class="badge badge3" src="../img/towson.png"></td>
+              </tr>
+
+              <tr>
+                <td>Aidan Lalonde</td>
+                <td>University of Mount Olive</td>
+<td><img class="badge" src="../img/umo.jpg"></td>
+              </tr>
+
+              <tr class="active-row">
+                <td>Carter Calrk</td>
+                <td>Lander University</td>
+<td><img class="badge badge3" src="../img/lander.png"></td>
+              </tr>
+
+              <tr>
+                <td>Kai George</td>
+                <td>Lewis University</td>
+<td><img class="badge" src="../img/lewis.png"></td>
+              </tr>
+
+              <tr class="active-row">
+                <td>Cole Lowe</td>
+                <td>North Greenville University</td>
+<td><img class="badge badge2" src="../img/north2.png"></td>
+              </tr>
+
+              <tr>
+                <td>Brian Simmons</td>
+                <td>Robert Morris University</td>
+<td><img class="badge badge1" src="../img/robert.png"></td>
+              </tr>
+
+
+              <tr class="active-row">
+                <td>Wesley Phillips</td>
+                <td>Tusculum University</td>
+<td><img class="badge " src="../img/tusculum.png"></td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        </div>
+      </div>
+ 
+     
+    <!-- tab script js -->
+    <script>
+      function openYear(evt, yearNum) {
+        var i, enr_year, tablinks;
+        enr_year = document.getElementsByClassName("enr_year");
+        for (i = 0; i < enr_year.length; i++) {
+          enr_year[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(yearNum).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+
+    <!-- Tab scipt js end -->
+    </section>
+    <!-- List Part PCL Alumni End -->
+
+    <!-- Footer -->
+    <div data-include="footer"></div>
+    <script type="text/javascript">
+      function inviewExample() {
+        var $example = $("#inview-example");
+        var inview;
+
+        if ($example.length) {
+          inview = new Waypoint.Inview({
+            element: $("#inview-example")[0],
+            entered: function (direction) {
+              $(".timer").each(function () {
+                var $this = $(this);
+                var val = $(this).data("count");
+                jQuery({
+                  Counter: 0,
+                }).animate(
+                  {
+                    Counter: val,
+                  },
+                  {
+                    duration: 1000,
+                    easing: "swing",
+                    step: function () {
+                      $this.text(Math.ceil(this.Counter));
+                    },
+                  }
+                );
+              });
+            },
+          });
+        }
+      }
+      $(window).on("load", function () {
+        inviewExample();
+      });
+    </script>
+    <script src="../js/fieldPrograms.js"></script>
+  </body>
+</html>

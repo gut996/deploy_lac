@@ -1,0 +1,593 @@
+  .main-title span {
+    display: block;
+    font-size: 4rem;
+    padding: 2%; 
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    color: #fff;
+    background-color:var(--color-marine-blue);
+    letter-spacing: .1em;
+    text-shadow: 
+      -1px -1px 1px #111, 
+      2px 2px 1px #363636;
+    
+  }
+
+
+.grid-container {
+  height: 100%;
+  margin: 0;
+}
+
+
+.camps {
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+}
+
+.camps-title {
+  grid-area: camps-title;
+  font-size: 5em;
+}
+
+.camps-txt {
+
+  padding: 5% 20%;
+  font-size: 1rem;
+}
+
+.box-links {
+  padding: 0px 200px;
+}
+
+.box-tournament {
+  grid-area: box-tournament;
+}
+
+.box-field {
+  grid-area: box-field;
+}
+
+.box-camps {
+  grid-area: box-camps;
+}
+
+.tournaments-grid {
+  /* display: flex; */
+  background-color: var(--color-bg-blue);
+  text-align: left;
+}
+
+.tournaments-grid p{
+  font-size: 1rem;
+  text-align: left;
+  padding: 2rem 4rem;
+}
+
+#tournaments{
+  padding: 5% 20%;
+}
+
+#imgtournaments{
+  position: relative;
+  width: 50%;
+  /* left: 50%; */
+  margin-bottom: 40px;
+  border:2px solid #fff;
+  background: url(img/tiger.png) no-repeat;
+  z-index: 4;
+  background-color: #102746;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.camps-grid {
+  /* background-color: #102746; */
+  display: flex !important;
+}
+
+.cardssub{
+  width: 30%;
+}
+
+.subcontentcontainer{
+  width: 70%;
+}
+
+.camps-grid h1{
+  color: #93bc55;
+  font-size: 6rem;
+  /* display: flex; */
+}
+
+h2.submenu-title{
+  font-size: 2rem;
+  color: var(--color-green);
+  text-align: center;
+}
+
+
+.camps-grid p{
+
+  font-size: 1rem;
+  text-align: justify;
+  padding: 2rem 10rem;
+}
+
+#camps{
+  padding: 10px 5%;  
+}
+
+#imgcamps{
+  position: relative;
+  width: 30%;
+  left: 50em;
+  margin-bottom: 70px;
+  border:2px solid #fff;
+  background: url(img/tiger.png) no-repeat;
+  z-index: 1;
+}
+.boxshadow3 {
+  background-color: #006a91;
+  position: relative;
+  width: 52em;
+  height: 35em;
+  left: 46em;
+  bottom: 36em;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+
+/* HEADER EXAMPLE */
+
+.header{
+  width: 100%;
+  height: 300px;
+  background-color: #006a91;
+}
+
+
+
+/* HECTOR'S CARD LIST */
+/* -------------- Tabs ------------ */
+
+
+.tabcontent {
+  display: none;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+  animation: fadeEffect 1s; 
+}
+
+.tabcontentsub{
+  background-color: var(--color-bg-blue);
+  display: none;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+  animation: fadeEffect 1s; 
+}
+
+.tabcontent h2{
+  font-size: 2rem;
+  color: var(--color-green);
+  text-align: center;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+
+.cards-list {
+  z-index: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
+  cursor: pointer;
+  transition: 0.4s;
+  transform: scale(0.85, 0.85);
+  overflow: hidden;
+  position: relative;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;  
+  display: block;
+  transition: 1s;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title h3{
+  color: var(--color-green);
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bolder;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  cursor: pointer;
+  background-color: rgba(16,39,70,0.8); 
+  width: 100%;
+  height: 15%;
+  padding: 5px;
+}
+
+.card:hover,
+.card.active{
+  transform: scale(1,1);
+  box-shadow: 14px 12px 2px -3px rgba(0,0,0,0.25);
+}
+
+.card:hover .card_image,
+.card.active .card_image{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  cursor: pointer;
+}
+
+.subcontentcontainer{
+  padding: 5%;
+  /* background-color: #006a91; */
+  /* margin: 60px; */
+}
+
+.tabcontentsub{
+  padding: 5% 0;
+}
+
+.tabcontentsub h3{
+  text-align: center;
+  color: var(--color-marine-blue);
+  font-size: 2rem;
+  margin-bottom: 10%;
+}
+
+.tabcontentsub p{
+  padding: 1rem;
+}
+
+.campdetails{
+  font-size: 1rem;
+  padding: 0 30%;
+}
+
+.campdetails i{
+  color: var(--color-green);
+  font-size: 1.7rem;
+  margin-right: 5%;
+}
+
+/* SUB CARDS STYLE */
+
+.card-sub {
+  margin: 30px auto;
+  width: 100%;
+  height: 200px;
+  /* border-radius: 40px; */
+  cursor: pointer;
+  transition: 0.4s;
+  transform: scale(0.85, 0.85);
+  overflow: hidden;
+  position: relative;
+}
+
+.card-sub .card_image {
+  width: inherit;
+  height: inherit;  
+  display: block;
+  transition: 1s;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.card-sub .card_image img {
+  width: inherit;
+  height: inherit;
+  /* border-radius: 40px; */
+  object-fit: cover;
+}
+
+.card-sub .card_title h3{
+  color: var(--color-green);
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bolder;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  cursor: pointer;
+  background-color: rgba(16,39,70,0.8);
+  width: 100%;
+  height: 40%;
+  padding: 5px;
+}
+
+.card-sub:hover,
+.card.active{
+  transform: scale(1,1);
+  box-shadow: 14px 12px 2px -3px rgba(0,0,0,0.25);
+}
+
+.card-sub:hover .card_image,
+.card.active .card_image{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  cursor: pointer;
+}
+
+/* BUTTON BTN REGISTRATION */
+.btn_registration {
+  margin-top: 30px;
+  background: #92BB55;
+  padding: 10px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  width: 20%;
+  color: var(--color-marine-blue);
+  border: none;
+  transition: .4s;
+  -webkit-appearance: none;
+}
+
+.btn_registration:hover {
+  background: var(--color-blue-grey);
+  cursor: pointer;
+}
+
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+}
+/* -------------- Tabs end ------------ */
+
+
+/* Coming soon */
+section{
+  display: none;    
+}
+.coming-soon{
+  display: block;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  background-color: white;
+  color: var(--color-minor-blue);
+}
+.coming-soon h1{
+  font-size: 4rem;
+  display: block;
+  margin: 10% auto;
+}
+/* Coming soon end*/
+
+
+
+
+@media all and (max-width: 1024px) {
+
+  #tournaments{
+    padding: 4% 5%;  
+  }
+  
+
+
+  .subcontentcontainer{
+    width: 90%;
+  }  
+
+
+  .card{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;   
+    transform: scale(0.85, 0.85);
+  }
+
+  .card .card_image img {
+    border-radius: 30px;
+  }
+
+
+  .card .card_title h3{  
+    font-size: 1.2rem;
+  }
+
+  .card .card_title h3.alternative-size {
+    font-size: 0.7rem;
+  }
+
+  .cardssub{
+    width: 50%;
+  }
+  
+  .subcontentcontainer{
+    width: 50%;
+    padding: 15% 0;
+  }
+
+  .campdetails {
+    padding: 0 10%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  
+  .card{
+    margin: 5px auto;
+  }
+
+  .card{
+    margin: 0 auto;
+    width: 240px;
+    height: 240px;
+    border-radius: 30px;   
+    transform: scale(0.85, 0.85);
+  }
+
+  .card .card_image img {
+    border-radius: 30px;
+  }
+
+
+  .card .card_image {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);  
+  }
+
+  .card .card_title h3{  
+    font-size: 1.3rem;
+  }
+
+  .card .card_title h3.alternative-size {
+    font-size: 1rem;
+  }
+
+  .camps-txt {
+    padding: 4% 5%;  
+  }
+
+  .cardssub{
+    width: 50%;
+  }
+
+  .campdetails {
+    padding: 0 1%;
+  }
+
+  .btn_registration{
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 530px) {
+
+  .main-title span {
+    font-size: 3rem;
+    padding: 3%;
+  }
+
+  /* TOURNAMENTS */
+  .tournaments-grid p{
+    padding: 1%;
+  }
+  #tournaments{
+    padding: 5% 10%
+  }
+
+  #imgtournaments{
+    top: 10px;
+    width: 100%;
+  }
+
+  /* CAMPS */
+  
+  .tabcontent{
+    flex-direction: column;
+  }
+  .camps-grid {
+    /* background-color: #102746; */
+    flex-direction: column;
+  }
+
+  .cardssub{
+    width: 100%;
+  }
+
+  .campdetails{
+    font-size: 1rem;
+    padding: 0 10%;
+  }
+  .subcontentcontainer{
+    padding: 7%;
+    width: 100%;
+  }
+
+  .btn_registration {
+    width: 40%;
+  }
+
+
+
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+
+
+  .card{
+    margin: 0;
+    width: 160px;
+    height: 170px;
+    border-radius: 30px;   
+    transform: scale(0.85, 0.85);
+  }
+
+  .card .card_image img {
+    border-radius: 30px;
+  }
+
+
+  .card .card_title h3{  
+    font-size: 1rem;
+  }
+
+  .card .card_title h3.alternative-size {
+    font-size: 0.7rem;
+}
+
+}
+@media screen and (max-width: 375px) {
+  .coming-soon{
+    padding: 30px;
+  }
+}
+

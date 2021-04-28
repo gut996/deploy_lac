@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pro Caliber Lacrosse</title>    
+    <script src="../jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="icon" type="image/png" href="../img/logo-lacrosse-circle.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/d1ee1bda50.js"  crossorigin="anonymous" ></script>
+    <script src="../js/utilities.js"></script>
+    <link rel="stylesheet" href="../css/camps.css" />
+    <!-- Use your css file-->
+  </head>
+  <body>
+    <!-- Tag to add header-->
+    <div data-include="menu"></div>
+    <!-- <div class="header">HEADER</div> -->
+
+    <!-- GRID CONTAINER -->
+    <!-- <div class="grid-container"> -->
+    <div class="camps">
+      <div class="main-title">
+        <span>Camps</span>
+      </div>
+      <div class="coming-soon">
+        <h1>Coming soon...</h1>
+    </div>
+      <!-- <div class="camps-title">
+          <h1>CAMPS</h1>
+        </div> -->
+      <section class="camps-txt">
+        At Pro Caliber Lacrosse, we host a variety of camps and events ranging
+        from skill development to recruiting opportunities. We offer seasonal
+        camps hosted by some of the best players on the planet, and specialized
+        camps where aspiring student-athletes can compete for scholarships in
+        front of college coaches.<br>
+        We also host the only British Columbia based recruiting tournament for
+        teams to showcase their talent in front of college scouts without
+        travelling south of the border.<br>
+
+      </section>
+    </div>
+
+    <!--CARDS-->
+    <!--
+    <div class="cards-list" id="cards">
+      <a href="#cards">
+      <div
+        id="tournamentsCard"
+        class="card"
+        onclick="openProgram(event, 'tournaments')"
+      >
+        <div class="card_image">
+          <img src="../img/camps1.jpg" />
+        </div>
+
+        <div class="card_title">
+          <h3>TOURNAMENTS</h3>
+        </div>
+      </div>
+      </a>
+      <a href="#cards">
+      <div id="campsCard" class="card" onclick="openProgram(event, 'camps')">
+        <div class="card_image">
+          <img src="../img/camps2.jpg" />
+        </div>
+        <div class="card_title">
+          <h3>CAMPS</h3>
+        </div>
+      </div>
+      </a>
+    </div>
+
+
+    <div id="tournaments" class="tournaments-grid tabcontent">
+      <h2 class="submenu-title">TOURNAMENTS</h2>
+      <p>
+        <p>The Pro-D Jamboree is the only recruiting tournament hosted in British Columbia for teams to showcase their talent. University coaches from all across North America attendthe event in hopes of recruiting some of BC's top student-athletes. Pro Caliber Lacrosseaims to provide a high-quality opportunity for all in attendance.<br>
+        Hosted at one of the most accomodating venues in British Columbia, the Pro-D Jamboree takes advantage of a provincial-wide day off of school to provide players with a unique opportunity to play games and potentially earn scholarships without hindering their academic progress.</p>
+        <br>
+        <h3>Event Format & Features</h3>
+        <ul>
+          <li>4 game guaranteed with potential for more via playoffs!</li>
+          <li>Champion crowned per division</li>
+          <li>All-Star Game for the top High School players</li>
+          <li>Games are filmed</li>
+          <li>Travel to Beautiful British Columbia</li>
+        </ul>
+        <br><h3>Dates:</h3>
+        October 23rd - 25th, 2020 (Friday, Saturday & Sunday)
+        <br>
+        <br><h3>Location:</h3>
+        TBD
+        <br>
+        <br><h3>Eligibility:</h3>
+        <ul>
+          <li>Boys
+            <li>High School: 2021 – 2024 Grad Years</li>
+            <li>Youth: 2025 – 2027 Grad Years</li>
+          </li>
+        </ul>
+        <br>
+         <h3>Price:</h3>
+         High School: $2,500 per team<br>
+         Youth Divisions: $1,750 per team<br>
+         Free Agent: $175 per player<br>
+         **$500 deposit will save your teams' spot – this event sold out last year**<br>
+         <br>
+         <h3>Contact:</h3>
+         To Enter a Team or for general inquiries
+         contact:Sandy Pace - Event Managersandy@procaliberlacrosse.net
+         <br><br>
+         <h3>2020 College Coaches List Coming Soon!</h3>
+         Tournament Information. "Pro-D Jamboree" is the name of the tournament
+      </p>
+      
+      <img id="imgtournaments" src="../img/deflacrosse.jpg" alt="" />
+      <div class="boxshadow1"></div>
+    </div>
+
+    <div id="camps" class="tabcontent">
+      <div class="camps-grid">
+        <div class="cardssub">
+          <h2 class="submenu-title">CAMPS</h2>
+
+          <div id="openDefaultSubmenu" class="card-sub" onclick="openProgramSub(event, 'spring-camps')">
+            <div class="card_image">
+              <img src="../img/home2.jpg" />
+            </div>
+            <div class="card_title">
+              <h3>SPRINGBREAK CAMP<br>Vancouver, 11/JUN</h3>            
+            </div>
+          </div>
+
+          <div class="card-sub" onclick="openProgramSub(event, 'summer-camps')">
+            <div class="card_image">
+              <img src="../img/home1.jpg" />
+            </div>
+            <div class="card_title">
+              <h3>SUMMER CAMP<br>Vancouver, 11/JUN</h3>
+            </div>
+          </div>
+
+          <div class="card-sub" onclick="openProgramSub(event, 'winter-camps')">
+            <div class="card_image">
+              <img src="../img/home3.jpg" />
+            </div>
+            <div class="card_title">
+              <h3>WINTER CAMP<br>Vancouver, 11/JUN</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="subcontentcontainer">
+          <div id="spring-camps" class="tabcontentsub">
+            <h3>Spring Camps</h3>
+            <div class="campdetails">
+              <p><i class="far fa-smile"></i> 4 to 6 years</p>
+              <p><i class="far fa-clock"></i>  9:00 am – 12:00 pm</p>
+              <p><i class="far fa-calendar-alt"></i> July 13 – 15, 2020</p>
+              <p><i class="fas fa-dollar-sign"></i> 259.99 + GST</p>       
+              <p><i class="far fa-edit"></i>Open Now</p>
+            </div> 
+            <div class="btn-container">
+              <input type="button" value="REGISTER" class="btn_registration"> 
+            </div>
+            
+            
+            COMENT THIS <div class="campdetails2">
+              <h3>CAMP INCLUDES</h3><br>
+              Awesome camp prizes and fun games throughout the week.
+              Photos will be taken and posted on social media so parents can stay updated.
+              <h3>WHAT TO BRING</h3>
+              Full Box Lacrosse Equipment
+              Water Bottle
+              Lunch (9 to 16 year olds)
+              Snack (4 to 9 year olds)
+              <h3>PROGRAM DIRECTOR</h3><br>
+              Tyler Pace - Founder and CEO, Pro Caliber Lacrosse<br>
+              Canada Player and Coach
+            </div> END COMMENT THIS
+            
+            
+          </div>
+          
+          <div id="summer-camps" class="tabcontentsub">
+            <h3>Summer Camps</h3>
+            <div class="campdetails">
+              <p><i class="far fa-smile"></i> 4 to 6 years</p>
+              <p><i class="far fa-clock"></i>  9:00 am – 12:00 pm</p>
+              <p><i class="far fa-calendar-alt"></i> July 13 – 15, 2020</p> 
+              <p><i class="fas fa-dollar-sign"></i> 259.99 + GST</p>       
+              <p><i class="far fa-edit"></i>Open Now</p>              
+            </div>
+            <div class="btn-container">
+              <input type="button" value="REGISTER" class="btn_registration"> 
+            </div>
+          </div>
+          <div id="winter-camps" class="tabcontentsub">
+            <h3>Winter Camps</h3>
+            <div class="campdetails">
+              <p><i class="far fa-smile"></i> 4 to 6 years</p>
+              <p><i class="far fa-clock"></i>  9:00 am – 12:00 pm</p> 
+              <p><i class="far fa-calendar-alt"></i>  July 13 – 15, 2020</p>
+              <p><i class="fas fa-dollar-sign"></i> 259.99 + GST</p>     
+              <p><i class="far fa-edit"></i>Open Now</p>
+            </div>
+            <div class="btn-container">
+              <input type="button" value="REGISTER" class="btn_registration"> 
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!-- Tag to add footer -->
+    <div data-include="footer"></div>
+
+    <script src="../js/fieldPrograms.js"></script>
+  </body>
+</html>
